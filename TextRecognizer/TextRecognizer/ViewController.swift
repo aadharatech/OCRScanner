@@ -41,9 +41,13 @@ class ViewController: UIViewController, G8TesseractDelegate {
          self.view.bringSubviewToFront(btnTap)
        
          self.viewFinder.layer.borderWidth = 1.0
-        self.viewFinder.layer.borderColor = UIColor.brown.cgColor
+        self.viewFinder.layer.borderColor = UIColor.white.cgColor
          self.viewFinder.layer.cornerRadius = 20.0
          self.viewFinder.clipsToBounds = true
+        
+        self.btnTap.layer.borderWidth = 1.0
+        self.btnTap.layer.borderColor = UIColor.white.cgColor
+        
     
                  // start camera init
          DispatchQueue.global(qos: .userInitiated).async {
